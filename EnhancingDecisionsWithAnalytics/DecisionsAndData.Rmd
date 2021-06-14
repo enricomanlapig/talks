@@ -1,0 +1,161 @@
+---
+title: "Enhancing decisions with analytics"
+subtitle: "Center for Applied Technology, Westmont College"
+author: 
+  - "Enrico Manlapig"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  #fig.width=9, fig.height=3.5, fig.retina=3,
+  #out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  fig.show = TRUE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo(
+  primary_color = "#1F4257", secondary_color = "#F97B64",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono")
+)
+```
+
+class: bottom, center, inverse
+background-image: url(cat_glasses.jpg)
+background-size: cover
+# How do you get ready in the morning?
+
+
+---
+class: center, middle
+background-color: #F4F1EF
+
+# What does it mean to make a good decision?
+
+.pull-left[
+.right[<img src = "DQ_yarn.png"/>]
+]
+
+
+.pull-right[
+.left[<img src = "cat_playing.svg" height = 300/>
+<img src = "life_scribble.png" height = 200/>]
+]
+
+---
+class: center, middle
+background-color: #F5F4F0
+
+# Types of analytics
+
+
+### Descriptive analytics &nbsp;|&nbsp;  Predictive analytics &nbsp;|&nbsp;  Prescriptive analytics
+
+<img src = "cat_back_turned_yarn.svg" height = 200/>
+
+
+
+
+---
+class: 
+background-color: #44272F
+
+# Descriptive analytics
+
+.pull-left[
+![cat mirror image](cat_mirror.svg)
+]
+
+.pull-right[
+
+* Descriptive statistics
+
+* Estimation and inference
+
+* Econometric modeling
+
+* Data visualization
+
+* Dashboards
+]
+
+---
+class: inverse
+background-color: #F7FF8C
+# Prescriptive analytics
+
+
+.pull-left[
+
+* Machine learning methods
+  - Supervised
+      + Classification
+      + Regression
+  - Unsupervised
+      + Clustering
+      + Association
+      
+Unofficially :)
+  * Subjective beliefs
+  * Scenario analysis
+  * Simulation
+]
+
+.pull-right[
+![cat mirror image](wet_cat.svg)
+]
+
+
+---
+class: 
+background-color: #654D4E
+# Prescriptive analytics
+
+.pull-left[
+* Optimization methods 
+    - Operations research
+    - Economics
+    
+* Decision Analytic methods
+    - Multi-criteria decision analysis
+    - Value focused thinking
+]
+
+.pull-right[
+<center><img src = "cat_in_tuxedo.png" height = 450 /></center>
+]
+
+
+
+---
+class: center, middle, inverse
+background-image: url("stars_background.svg")
+background-color: #F5D443
+
+
+# Coming soon!
+
+.center[### EB020 Research & Forecasting in San Francisco ]
+
+.center[### EB138 Applied Management Science]
+
+.center[### EB196 Decision Lab]
