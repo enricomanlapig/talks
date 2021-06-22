@@ -39,6 +39,7 @@ style_duo(
 )
 ```
 
+
 class: bottom, center, inverse
 background-image: url(cat_glasses.jpg)
 background-size: cover
