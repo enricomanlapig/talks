@@ -3,9 +3,12 @@ title: "Enhancing decisions with analytics"
 subtitle: "Center for Applied Technology, Westmont College"
 author: 
   - "Enrico Manlapig"
-date: '`r Sys.Date()`'
+role: "Associate Prof. of Economics & Business"
+company: 'Westmont College'
+date: '2021-06-11'
 output:
   xaringan::moon_reader:
+    seal: false
     css: xaringan-themer.css
     nature:
       slideNumberFormat: "%current%"
@@ -15,7 +18,10 @@ output:
       countIncrementalSlides: true
 ---
 
-```{r setup, include=FALSE}
+```{r, include = FALSE}
+library(fontawesome)
+library(xaringanthemer)
+
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(
   #fig.width=9, fig.height=3.5, fig.retina=3,
@@ -27,23 +33,72 @@ knitr::opts_chunk$set(
   fig.show = TRUE,
   hiline = TRUE
 )
-```
 
-```{r xaringan-themer, include=FALSE, warning=FALSE}
-library(xaringanthemer)
-style_duo(
-  primary_color = "#1F4257", secondary_color = "#F97B64",
+style_mono_light(base_color = "#1F4257",
+#  primary_color = "#1F4257", secondary_color = "#F97B64",
   header_font_google = google_font("Josefin Sans"),
   text_font_google   = google_font("Montserrat", "300", "300i"),
-  code_font_google   = google_font("Fira Mono")
+  code_font_google   = google_font("Fira Mono"),
+  colors = c(
+  red = "#F97B64",
+  blue = "#1F4257",
+  purple = "#3e2f5b",
+  orange = "#ff8811",
+  green = "#136f63",
+  white = "#FFFFFF")
 )
 ```
 
+class: title-slide, left, middle
+background-image: url("images/boot.jpg")
+background-position: right
+background-size: 60%
+background-color: #F6F6F5
+
+
+.pull-left[
+
+# .blue[`r rmarkdown::metadata$title`]
+
+### .blue[`r rmarkdown::metadata$subtitle`]
+
+### .blue[`r rmarkdown::metadata$author`]
+
+### .blue[`r rmarkdown::metadata$date`]
+]
+
+.pull-right[
+![](images/boot.jpeg)
+]
+
+---
+
+name: hello
+class: middle, center
+background-color: #FFA86D
+
+
+### `r rmarkdown::metadata$author`
+
+<img style="border-radius: 50%;" src="https://emanlapig.net/img/profile_pic.png" width="150px"/>
+
+### `r rmarkdown::metadata$role`
+
+### `r rmarkdown::metadata$company`
+
+[`r fontawesome::fa("github")` @enricomanlapig](https://github.com/enricomanlapig)
+[`r fontawesome::fa("twitter")` @EnricoManlapig](https://twitter.com/EnricoManlapig)   
+[`r fontawesome::fa("link")` emanlapig.net](https://emanlapig.net)
+
+
+---
 
 class: bottom, center, inverse
-background-image: url(images/cat_glasses.jpg)
-background-size: cover
-# How do you get ready in the morning?
+background-image: url(images/getting_ready.jpg)
+background-position: top
+background-size: 70%
+background-color: #F7F0EA
+# .blue[How do you get ready in the morning?]
 
 
 ---
@@ -53,13 +108,13 @@ background-color: #F4F1EF
 # What does it mean to make a good decision?
 
 .pull-left[
-.right[<img src = "images/DQ_yarn.png"/>]
+<img src = "images/DQ_yarn.png"/>
 ]
 
 
 .pull-right[
-.left[<img src = "images/cat_playing.svg" height = 300/>
-<img src = "images/life_scribble.png" height = 200/>]
+<img src = "images/cat_playing.svg" height = 300/>
+<img src = "images/life_scribble.png" height = 200/>
 ]
 
 ---
@@ -77,13 +132,13 @@ background-color: #F5F4F0
 
 
 ---
-class: 
+class: inverse
 background-color: #44272F
 
 # Descriptive analytics
 
 .pull-left[
-![cat mirror image](images/cat_mirror.svg)
+![mirror image](images/mirror.jpg)
 ]
 
 .pull-right[
@@ -96,18 +151,18 @@ background-color: #44272F
 
 * Data visualization
 
-* Dashboards
+ * Dashboards
 ]
 
 ---
-class: inverse
-background-color: #F7FF8C
+class: 
+background-color: #FFEAC1
 # Prescriptive analytics
 
 
 .pull-left[
 
-* Machine learning methods
+* Officially: Machine learning methods
   - Supervised
       + Classification
       + Regression
@@ -115,19 +170,19 @@ background-color: #F7FF8C
       + Clustering
       + Association
       
-Unofficially :)
-  * Subjective beliefs
-  * Scenario analysis
-  * Simulation
+* Unofficially `r emo::ji("wink")`: Anything dealing with the future 
+  - Subjective beliefs
+  - Scenario analysis
+  - Simulation
 ]
 
 .pull-right[
-![cat mirror image](images/wet_cat.svg)
+<center><img src = "images/weather.jpg" height = 450/></center>
 ]
 
 
 ---
-class: 
+class: inverse
 background-color: #654D4E
 # Prescriptive analytics
 
@@ -142,14 +197,15 @@ background-color: #654D4E
 ]
 
 .pull-right[
-<center><img src = "images/cat_in_tuxedo.png" height = 450 /></center>
+![](images/formal.jpg)
 ]
 
 
 
 ---
-class: center, middle, inverse
-background-image: url("images/stars_background.svg")
+class: center, middle
+background-image: url("images/stars.jpg")
+background-size: cover
 background-color: #F5D443
 
 

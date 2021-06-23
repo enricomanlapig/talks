@@ -43,22 +43,29 @@
   --header-h3-font-size: 1.75rem;
 
   /* Colors */
-  --text-color: #FEFDFD;
-  --header-color: #F97B64;
-  --background-color: #1F4257;
-  --link-color: #F97B64;
-  --text-bold-color: #F97B64;
+  --text-color: #152E3C;
+  --header-color: #1F4257;
+  --background-color: #E8ECEE;
+  --link-color: #1F4257;
+  --text-bold-color: #1F4257;
   --code-highlight-color: rgba(255,255,0,0.5);
-  --inverse-text-color: #1F4257;
-  --inverse-background-color: #F97B64;
-  --inverse-header-color: #1F4257;
-  --inverse-link-color: #F97B64;
+  --inverse-text-color: #E8ECEE;
+  --inverse-background-color: #1F4257;
+  --inverse-header-color: #E8ECEE;
+  --inverse-link-color: #1F4257;
   --title-slide-background-color: #1F4257;
-  --title-slide-text-color: #F97B64;
-  --header-background-color: #F97B64;
-  --header-background-text-color: #1F4257;
-  --primary: #1F4257;
-  --secondary: #F97B64;
+  --title-slide-text-color: #E8ECEE;
+  --header-background-color: #1F4257;
+  --header-background-text-color: #E8ECEE;
+  --base: #1F4257;
+  --white: #E8ECEE;
+  --black: #152E3C;
+  --red: #F97B64;
+  --blue: #1F4257;
+  --purple: #3e2f5b;
+  --orange: #ff8811;
+  --green: #136f63;
+  --white: #FFFFFF;
 }
 
 html {
@@ -99,10 +106,10 @@ h1, h2, h3 {
 }
 .remark-inline-code {
   font-size: var(--code-inline-font-size);
-  color: #F97B64;
+  color: #1F4257;
 }
 .remark-slide-number {
-  color: #FEFDFD;
+  color: #1F4257;
   opacity: 1;
   font-size: 0.9em;
 }
@@ -147,10 +154,10 @@ a, a > code {
   float: left;
 }
 .left-column h2, .left-column h3 {
-  color: #F97B6499;
+  color: #1F425799;
 }
 .left-column h2:last-of-type, .left-column h3:last-child {
-  color: #F97B64;
+  color: #1F4257;
 }
 .right-column {
   width: 75%;
@@ -172,7 +179,7 @@ img, video, iframe {
   max-width: 100%;
 }
 blockquote {
-  border-left: solid 5px #F97B6480;
+  border-left: solid 5px #1F425780;
   padding-left: 1em;
 }
 .remark-slide table {
@@ -187,7 +194,7 @@ th, td {
   padding: 5px;
 }
 .remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) {
-  background: #E8ECEE;
+  background: #D2D9DD;
 }
 table.dataTable tbody {
   background-color: var(--background-color);
@@ -197,7 +204,7 @@ table.dataTable.display tbody tr.odd {
   background-color: var(--background-color);
 }
 table.dataTable.display tbody tr.even {
-  background-color: #E8ECEE;
+  background-color: #D2D9DD;
 }
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.5);
@@ -237,16 +244,58 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   }
 }
 
-.primary {
-  color: var(--primary);
+.base {
+  color: var(--base);
 }
-.bg-primary {
-  background-color: var(--primary);
+.bg-base {
+  background-color: var(--base);
 }
-.secondary {
-  color: var(--secondary);
+.white {
+  color: var(--white);
 }
-.bg-secondary {
-  background-color: var(--secondary);
+.bg-white {
+  background-color: var(--white);
+}
+.black {
+  color: var(--black);
+}
+.bg-black {
+  background-color: var(--black);
+}
+.red {
+  color: var(--red);
+}
+.bg-red {
+  background-color: var(--red);
+}
+.blue {
+  color: var(--blue);
+}
+.bg-blue {
+  background-color: var(--blue);
+}
+.purple {
+  color: var(--purple);
+}
+.bg-purple {
+  background-color: var(--purple);
+}
+.orange {
+  color: var(--orange);
+}
+.bg-orange {
+  background-color: var(--orange);
+}
+.green {
+  color: var(--green);
+}
+.bg-green {
+  background-color: var(--green);
+}
+.white {
+  color: var(--white);
+}
+.bg-white {
+  background-color: var(--white);
 }
 
