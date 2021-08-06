@@ -48,13 +48,13 @@ style_mono_light(base_color = "#1F4257",
 )
 ```
 
-class: title-slide, left, middle
+class: title-slide, center, middle
 background-image: url("images/plane.png")
 background-position: fill
 background-color: #F6F6F5
 
 
-.pull-right[
+
 
 # .blue[`r rmarkdown::metadata$title`]
 
@@ -65,7 +65,7 @@ background-color: #F6F6F5
 ### .blue[`r rmarkdown::metadata$institute`]
 
 ### .blue[`r rmarkdown::metadata$date`]
-]
+
 
 
 ---
